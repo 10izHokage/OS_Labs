@@ -1,0 +1,149 @@
+Program started, PID=17216, time=2026-01-22 18:09:23.870
+PID=17216 Time=2026-01-22 18:09:23.878 Counter=1
+Copy copy1 started, PID=6204, time=2026-01-22 18:09:23.903
+Copy copy1 finished, PID=6204, time=2026-01-22 18:09:23.912
+Copy copy2 started, PID=19084, time=2026-01-22 18:09:23.911
+PID=17216 Time=2026-01-22 18:09:24.884 Counter=25
+PID=17216 Time=2026-01-22 18:09:25.894 Counter=28
+Copy copy2 finished, PID=19084, time=2026-01-22 18:09:25.926
+PID=17216 Time=2026-01-22 18:09:26.904 Counter=17
+Copy copy1 started, PID=3976, time=2026-01-22 18:09:26.931
+Copy copy1 finished, PID=3976, time=2026-01-22 18:09:26.937
+Copy copy2 started, PID=9016, time=2026-01-22 18:09:26.941
+PID=17216 Time=2026-01-22 18:09:27.906 Counter=57
+PID=17216 Time=2026-01-22 18:09:28.921 Counter=61
+Copy copy2 finished, PID=9016, time=2026-01-22 18:09:28.952
+Program started, PID=16172, time=2026-01-22 18:09:29.617
+PID=17216 Time=2026-01-22 18:09:29.927 Counter=34
+Copy copy1 started, PID=6544, time=2026-01-22 18:09:29.951
+Copy copy1 finished, PID=6544, time=2026-01-22 18:09:29.956
+Copy copy2 started, PID=2476, time=2026-01-22 18:09:29.958
+PID=17216 Time=2026-01-22 18:09:30.930 Counter=96
+PID=17216 Time=2026-01-22 18:09:31.944 Counter=102
+Copy copy2 finished, PID=2476, time=2026-01-22 18:09:31.975
+PID=17216 Time=2026-01-22 18:09:32.965 Counter=57
+Copy copy2 started, PID=18068, time=2026-01-22 18:09:33.004
+Copy copy1 started, PID=7272, time=2026-01-22 18:09:33.005
+Copy copy1 finished, PID=7272, time=2026-01-22 18:09:33.024
+PID=17216 Time=2026-01-22 18:09:33.982 Counter=131
+PID=17216 Time=2026-01-22 18:09:34.983 Counter=137
+Copy copy2 finished, PID=18068, time=2026-01-22 18:09:35.014
+Copy copy1 started, PID=12888, time=2026-01-22 18:09:35.990
+Copy copy1 finished, PID=12888, time=2026-01-22 18:09:35.996
+Copy copy2 started, PID=18612, time=2026-01-22 18:09:35.997
+PID=17216 Time=2026-01-22 18:09:36.011 Counter=170
+PID=17216 Time=2026-01-22 18:09:37.017 Counter=176
+Copy copy2 finished, PID=18612, time=2026-01-22 18:09:38.008
+PID=17216 Time=2026-01-22 18:09:38.024 Counter=91
+PID=17216 Time=2026-01-22 18:09:39.041 Counter=98
+Copy copy2 started, PID=4408, time=2026-01-22 18:09:39.049
+Copy copy1 started, PID=2940, time=2026-01-22 18:09:39.056
+Copy copy1 finished, PID=2940, time=2026-01-22 18:09:39.060
+PID=17216 Time=2026-01-22 18:09:40.056 Counter=213
+PID=17216 Time=2026-01-22 18:09:41.065 Counter=219
+Copy copy2 finished, PID=4408, time=2026-01-22 18:09:41.065
+PID=17216 Time=2026-01-22 18:09:42.081 Counter=115
+Copy copy2 started, PID=14476, time=2026-01-22 18:09:42.122
+Copy copy1 started, PID=18052, time=2026-01-22 18:09:42.193
+Copy copy1 finished, PID=18052, time=2026-01-22 18:09:42.195
+PID=17216 Time=2026-01-22 18:09:43.095 Counter=248
+PID=17216 Time=2026-01-22 18:09:44.112 Counter=255
+Copy copy2 finished, PID=14476, time=2026-01-22 18:09:44.127
+Copy copy1 started, PID=12608, time=2026-01-22 18:09:45.120
+Copy copy1 finished, PID=12608, time=2026-01-22 18:09:45.127
+PID=17216 Time=2026-01-22 18:09:45.144 Counter=143
+Copy copy2 started, PID=16508, time=2026-01-22 18:09:45.141
+PID=17216 Time=2026-01-22 18:09:46.159 Counter=292
+Copy copy2 finished, PID=16508, time=2026-01-22 18:09:47.156
+PID=17216 Time=2026-01-22 18:09:47.172 Counter=149
+Copy copy1 started, PID=11460, time=2026-01-22 18:09:48.137
+Copy copy1 finished, PID=11460, time=2026-01-22 18:09:48.143
+Copy copy2 started, PID=8056, time=2026-01-22 18:09:48.143
+PID=17216 Time=2026-01-22 18:09:48.173 Counter=331
+PID=17216 Time=2026-01-22 18:09:49.175 Counter=202
+Copy copy2 finished, PID=8056, time=2026-01-22 18:09:50.151
+PID=17216 Time=2026-01-22 18:09:50.215 Counter=104
+Copy copy1 started, PID=15800, time=2026-01-22 18:09:51.164
+Copy copy1 finished, PID=15800, time=2026-01-22 18:09:51.170
+Copy copy2 started, PID=1348, time=2026-01-22 18:09:51.170
+PID=17216 Time=2026-01-22 18:09:51.231 Counter=241
+PID=17216 Time=2026-01-22 18:09:52.233 Counter=248
+Copy copy2 finished, PID=1348, time=2026-01-22 18:09:53.191
+PID=17216 Time=2026-01-22 18:09:53.240 Counter=127
+Copy copy1 started, PID=2504, time=2026-01-22 18:09:54.178
+Copy copy1 finished, PID=2504, time=2026-01-22 18:09:54.185
+Copy copy2 started, PID=18080, time=2026-01-22 18:09:54.183
+PID=17216 Time=2026-01-22 18:09:54.246 Counter=286
+PID=17216 Time=2026-01-22 18:09:55.259 Counter=292
+Copy copy2 finished, PID=18080, time=2026-01-22 18:09:56.198
+PID=17216 Time=2026-01-22 18:09:56.276 Counter=300
+Copy copy1 started, PID=4456, time=2026-01-22 18:09:57.195
+Copy copy1 finished, PID=4456, time=2026-01-22 18:09:57.200
+Copy copy2 started, PID=3596, time=2026-01-22 18:09:57.202
+PID=17216 Time=2026-01-22 18:09:57.285 Counter=633
+PID=17216 Time=2026-01-22 18:09:58.293 Counter=639
+Copy copy2 finished, PID=3596, time=2026-01-22 18:09:59.216
+PID=17216 Time=2026-01-22 18:09:59.296 Counter=322
+Copy copy1 started, PID=17768, time=2026-01-22 18:10:00.212
+Copy copy1 finished, PID=17768, time=2026-01-22 18:10:00.220
+Copy copy2 started, PID=16780, time=2026-01-22 18:10:00.222
+PID=17216 Time=2026-01-22 18:10:00.302 Counter=676
+PID=17216 Time=2026-01-22 18:10:01.316 Counter=683
+Copy copy2 finished, PID=16780, time=2026-01-22 18:10:02.255
+PID=17216 Time=2026-01-22 18:10:02.318 Counter=344
+Copy copy1 started, PID=16624, time=2026-01-22 18:10:03.232
+Copy copy1 finished, PID=16624, time=2026-01-22 18:10:03.238
+Copy copy2 started, PID=14604, time=2026-01-22 18:10:03.243
+PID=17216 Time=2026-01-22 18:10:03.323 Counter=721
+PID=17216 Time=2026-01-22 18:10:04.342 Counter=727
+Copy copy2 finished, PID=14604, time=2026-01-22 18:10:05.264
+PID=17216 Time=2026-01-22 18:10:05.358 Counter=366
+Copy copy1 started, PID=10512, time=2026-01-22 18:10:06.283
+Copy copy1 finished, PID=10512, time=2026-01-22 18:10:06.286
+Copy copy2 started, PID=15816, time=2026-01-22 18:10:06.286
+PID=17216 Time=2026-01-22 18:10:06.374 Counter=765
+PID=17216 Time=2026-01-22 18:10:07.388 Counter=772
+Copy copy2 finished, PID=15816, time=2026-01-22 18:10:08.299
+PID=17216 Time=2026-01-22 18:10:08.394 Counter=389
+Copy copy1 started, PID=7324, time=2026-01-22 18:10:09.295
+Copy copy1 finished, PID=7324, time=2026-01-22 18:10:09.301
+Copy copy2 started, PID=11072, time=2026-01-22 18:10:09.308
+PID=17216 Time=2026-01-22 18:10:09.410 Counter=810
+PID=17216 Time=2026-01-22 18:10:10.415 Counter=817
+Copy copy2 finished, PID=11072, time=2026-01-22 18:10:11.327
+PID=17216 Time=2026-01-22 18:10:11.422 Counter=413
+Copy copy1 started, PID=1396, time=2026-01-22 18:10:12.325
+Copy copy1 finished, PID=1396, time=2026-01-22 18:10:12.331
+Copy copy2 started, PID=6752, time=2026-01-22 18:10:12.329
+PID=17216 Time=2026-01-22 18:10:12.437 Counter=858
+PID=17216 Time=2026-01-22 18:10:13.449 Counter=864
+Copy copy2 finished, PID=6752, time=2026-01-22 18:10:14.344
+PID=17216 Time=2026-01-22 18:10:14.454 Counter=435
+Copy copy1 started, PID=11036, time=2026-01-22 18:10:15.334
+Copy copy1 finished, PID=11036, time=2026-01-22 18:10:15.339
+Copy copy2 started, PID=13668, time=2026-01-22 18:10:15.341
+PID=17216 Time=2026-01-22 18:10:15.469 Counter=904
+Copy copy2 finished, PID=13668, time=2026-01-22 18:10:17.347
+PID=16172 Time=2026-01-22 18:10:19.053 Counter=461
+PID=16172 Time=2026-01-22 18:10:20.055 Counter=464
+Copy copy1 started, PID=17548, time=2026-01-22 18:10:20.789
+Copy copy1 finished, PID=17548, time=2026-01-22 18:10:20.795
+Copy copy2 started, PID=11080, time=2026-01-22 18:10:20.809
+PID=16172 Time=2026-01-22 18:10:21.069 Counter=954
+PID=16172 Time=2026-01-22 18:10:22.088 Counter=958
+Copy copy2 finished, PID=11080, time=2026-01-22 18:10:22.828
+PID=16172 Time=2026-01-22 18:10:23.093 Counter=481
+Copy copy1 started, PID=17932, time=2026-01-22 18:10:23.819
+Copy copy1 finished, PID=17932, time=2026-01-22 18:10:23.825
+Copy copy2 started, PID=10344, time=2026-01-22 18:10:23.827
+PID=16172 Time=2026-01-22 18:10:24.108 Counter=987
+PID=16172 Time=2026-01-22 18:10:25.113 Counter=990
+Copy copy2 finished, PID=10344, time=2026-01-22 18:10:25.838
+PID=16172 Time=2026-01-22 18:10:26.134 Counter=497
+Copy copy1 started, PID=6316, time=2026-01-22 18:10:26.831
+Copy copy1 finished, PID=6316, time=2026-01-22 18:10:26.837
+Copy copy2 started, PID=2316, time=2026-01-22 18:10:26.836
+PID=16172 Time=2026-01-22 18:10:27.138 Counter=1019
+PID=16172 Time=2026-01-22 18:10:28.154 Counter=1022
+Copy copy2 finished, PID=2316, time=2026-01-22 18:10:28.856
+PID=16172 Time=2026-01-22 18:10:29.168 Counter=513
