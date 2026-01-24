@@ -23,17 +23,20 @@ bool serial_port_open(const char* ip, int port)
     g_sock = socket(AF_INET, SOCK_DGRAM, 0);
     if (g_sock == INVALID_SOCKET) {
         std::cout << "Cant open socket!\n";
+        return false;
+    }
+
+    sockaddr_in local_addr{};
+    local_addr.sin_family = AF_INET;
+    local_addr.sin_port = htons((unsigned short)port);
+
+    if (inet_pton(AF_INET, ip, &local_addr.sin_addr) <= 0) {
+        std::cout << "Invalid IP address!\n";
         serial_port_close();
         return false;
     }
 
-    sockaddr_in local_addr;
-    memset(&local_addr, 0, sizeof(local_addr));
-    local_addr.sin_family = AF_INET;
-    local_addr.sin_addr.s_addr = inet_addr(ip);
-    local_addr.sin_port = htons((unsigned short)port);
-
-    if (bind(g_sock, (sockaddr*)&local_addr, sizeof(local_addr))) {
+    if (bind(g_sock, (sockaddr*)&local_addr, sizeof(local_addr)) < 0) {
         std::cout << "Failed to bind!\n";
         serial_port_close();
         return false;
@@ -49,12 +52,12 @@ bool serial_port_read_line(char* out_buf, int out_buf_size)
     if (g_sock == INVALID_SOCKET)
         return false;
 
-    sockaddr_in remote_addr;
-    unsigned int addrlen = sizeof(remote_addr);
-    memset(&remote_addr, 0, sizeof(remote_addr));
+    sockaddr_in remote_addr{};
+    socklen_t addrlen = sizeof(remote_addr);
 
     int readd = recvfrom(g_sock, out_buf, out_buf_size - 1, 0,
                          (sockaddr*)&remote_addr, &addrlen);
+
     if (readd == SOCKET_ERROR || readd <= 0)
         return false;
 
@@ -65,7 +68,6 @@ bool serial_port_read_line(char* out_buf, int out_buf_size)
 void serial_port_close()
 {
     if (g_sock != INVALID_SOCKET) {
-        shutdown(g_sock, SHUT_RDWR);
         close(g_sock);
         g_sock = INVALID_SOCKET;
     }

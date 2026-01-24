@@ -1,4 +1,4 @@
-#include <stdlib.h>     
+#include <stdlib.h>      
 #include <stdio.h>      
 #include <string.h>     
 #include <iostream>
@@ -113,11 +113,10 @@ static void append_line(const std::string& path, const std::string& line)
         out << line << "\n";
 }
 
-
 static void trim_measurements_24h(const std::string& path, time_t now)
 {
-    const time_t cutoff = now - 24 * 60 * 60; // 24 часа
-    // const time_t cutoff = now - 120;  // 2 минуты для ускоренного теста
+    const time_t cutoff = now - 24 * 60 * 60;
+    // const time_t cutoff = now - 120;   // 2 минуты вместо 24 часов для теста
 
     std::ifstream in(path);
     if (!in.is_open()) return;
@@ -137,8 +136,8 @@ static void trim_measurements_24h(const std::string& path, time_t now)
 
 static void trim_hourly_1month(const std::string& path, time_t now)
 {
-    const time_t cutoff = now - 30 * 24 * 60 * 60;  // 30 дней (месяц)
-    // const time_t cutoff = now - 120;  // 2 минуты для ускоренного теста
+    const time_t cutoff = now - 30 * 24 * 60 * 60;
+    // const time_t cutoff = now - 300;   // 5 минут вместо месяца для теста
 
     std::ifstream in(path);
     if (!in.is_open()) return;
@@ -167,6 +166,8 @@ static void trim_daily_current_year(const std::string& path, int current_year)
         int y;
         if (parse_daily_line(line, y) && y == current_year)
             keep.push_back(line);
+
+        // if (parse_daily_line(line, y)) keep.push_back(line); для теста
     }
     in.close();
 
@@ -193,23 +194,18 @@ int main(int argc, char** argv)
     const std::string HOUR_LOG = "data/hourly_avg.log";
     const std::string DAY_LOG  = "data/daily_avg.log";
 
-    std::cout << "Temp monitor started.\n";
-    std::cout << "Listening on " << ip_str << ":" << port << "\n";
-
     time_t tstart = now_time();
     std::string current_hour_key = format_hour_key(tstart);
     std::string current_day_key  = format_date_key(tstart);
 
     double hour_sum = 0.0;
     int hour_cnt = 0;
-
     double day_sum = 0.0;
     int day_cnt = 0;
 
     time_t last_trim = 0;
 
     char buf[256];
-    memset(buf, 0, sizeof(buf));
 
     for (;;) {
         if (!serial_port_read_line(buf, sizeof(buf))) {
@@ -218,10 +214,8 @@ int main(int argc, char** argv)
         }
 
         double temp = 0.0;
-        if (sscanf(buf, "%lf", &temp) != 1) {
-            std::cout << "Bad data: '" << buf << "'\n";
+        if (sscanf(buf, "%lf", &temp) != 1)
             continue;
-        }
 
         time_t tnow = now_time();
 
@@ -232,7 +226,7 @@ int main(int argc, char** argv)
 
         if (hour_key != current_hour_key) {
             if (hour_cnt > 0) {
-                double avg = hour_sum / (double)hour_cnt;
+                double avg = hour_sum / hour_cnt;
                 append_line(HOUR_LOG, current_hour_key + " " + std::to_string(avg));
                 trim_hourly_1month(HOUR_LOG, tnow);
             }
@@ -243,7 +237,7 @@ int main(int argc, char** argv)
 
         if (day_key != current_day_key) {
             if (day_cnt > 0) {
-                double avg = day_sum / (double)day_cnt;
+                double avg = day_sum / day_cnt;
                 append_line(DAY_LOG, current_day_key + " " + std::to_string(avg));
 
                 int cyear = local_tm(tnow).tm_year + 1900;
@@ -259,7 +253,8 @@ int main(int argc, char** argv)
         day_sum += temp;
         day_cnt++;
 
-        if (last_trim == 0 || (tnow - last_trim) >= 60) {
+        if (last_trim == 0 || (tnow - last_trim) >= 60)
+        {
             trim_measurements_24h(MEAS_LOG, tnow);
             last_trim = tnow;
         }
