@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>График температуры</h1>
+
+    <div id="current-container">
+        Текущая температура: <span id="current">--</span> °C
+    </div>
+
+    <div class="chart-controls">
+        <button id="btn-hourly">Температура за последний час</button>
+        <button id="btn-daily">Температура за последние 7 дней</button>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="chartCanvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
