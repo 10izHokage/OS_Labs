@@ -57,7 +57,6 @@ void http_server_thread(int port) {
         std::string line = req.substr(0, req.find("\r\n"));
         std::cout << "HTTP request: " << line << "\n";
 
-        // Разбираем метод и путь
         std::string method, path;
         std::istringstream iss(line);
         iss >> method >> path;
@@ -65,7 +64,6 @@ void http_server_thread(int port) {
         std::ostringstream resp;
         std::ostringstream body;
 
-        // ==== Обработка запросов ==== 
         if (path.find("/current") == 0) {
             double temp = db_get_last_temperature();
             body << "{ \"temperature\": " << temp << " }";
